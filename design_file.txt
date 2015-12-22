@@ -1,0 +1,29 @@
+#Fonts
+
+Source Sans Pro
+  weights: 400, 700
+
+Oswald:
+  weight: 700
+
+Merriweather:
+  weights: 700, 700 italic
+
+You have to eye ball the font family, weight, and sizes yourself.
+
+Here is the Google Fonts link to use in your header: 
+http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic
+
+#Container 
+
+Make your container width: 1280px
+
+#Colors
+
+light gray: #C6C6C6
+dark gray: #999
+darkest gray (for border): #AAA
+yellow: yellow
+white: white
+blakc: black
+transparent white: white, 80%

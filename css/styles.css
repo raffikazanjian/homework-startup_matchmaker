@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/******************************************
+/* Fonts
+-------------------------------------------
+/* Source Sans Pro
+/* 	Normal - 400
+/* 	Bold 700
+/* font-family: 'Source Sans Pro', sans-serif;
+-------------------------------------------
+/* Oswald
+/* 	Bold - 700
+/* font-family: 'Oswald', sans-serif;
+-------------------------------------------
+/* Merriweather
+/* 	Bold 700
+/*  Bold Italic 700
+/* font-family: 'Merriweather', serif;
+/*******************************************/
+
+
+/******************************************
+/* GLOBAL STYLES
+/*******************************************/
+
+body {
+     color: #000;
+	 background-color: #f0efef;
+     font-size: 12px;
+     line-height: 1;
+     font-family: 'Source Sans Pro', sans-serif;
+}
+
+header, section, main, footer {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+section {
+	overflow: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header-container {
+	background-color: #000;
+	border-bottom: 4px solid yellow;
+}
+
+#quote-container {
+	background-color: #C6C6C6;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+
+#main-container {
+	background-color: #000;
+}
+#article-container {
+	background-color: #fff;
+}
+#footer-container {
+	background-color: #000;
+}
+/******************************************
+/* OTHER STYLES
+/*******************************************/
+
+header {
+	padding: 20px 0 20px 25px;
+	overflow: auto;
+}
+
+.logo {
+	color: yellow;
+	font: 700 30px 'Merriweather', serif;
+	margin-bottom: 22px;
+}
+
+nav {
+	float: right;
+	margin-right: 34px;
+}
+
+nav a {
+	font:  700 20px 'Source Sans Pro', sans-serif;
+	color: #fff;
+	margin-left: 15px;
+}
+
+nav a:first-child, nav a:nth-child(2) {
+	font:  700 20px 'Oswald', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+blockquote {
+	font: italic 700 25px 'Merriweather', serif;
+	color: #000;
+	text-align: center;
+	height: 76px;
+	line-height: 76px;
+}
+
+blockquote strike {
+	color: #999;
+}
+
+blockquote span {
+	border-bottom: 3px solid yellow;
+}
+
+main {
+	background: url('../images/coworking-sm.jpg') 0 0 no-repeat transparent;
+	background-size: cover;
+	padding: 0 0 60px 0;
+	overflow: auto;
+}
+
+main aside {
+	float: right;
+	width: 315px;
+	height: 400px;
+	margin: 3% 2% 0 0;
+	background-color: rgba(255, 255, 255, .9);
+	border: 1px solid #000;
+}
+
+main aside h2 {
+	width: 252px;
+	font:  700 30px 'Source Sans Pro', sans-serif;
+	margin: 14px auto 14px;
+}
+
+main aside p {
+	font:  400 20px/28px 'Source Sans Pro', sans-serif;
+	width: 252px;
+	margin: 0 auto 38px auto;
+}
+
+.button {
+	display: block;
+	width: 255px;
+	margin: 0 auto;
+	height: 54px;
+	font:  700 20px/54px 'Oswald', sans-serif;
+	background-color: yellow;
+	color: #000;
+	text-align: center;
+	border-radius: 5px;
+	text-transform:uppercase;
+	box-shadow: 2px 2px 8px 0 #999;
+}
+
+.button-gray {
+	display: block;
+	width: 195px;
+	margin: 0;
+	height: 54px;
+	font:  700 20px/54px 'Oswald', sans-serif;
+	background-color: #C6C6C6;
+	color: #000;
+	text-align: center;
+	border-radius: 5px;
+	text-transform:uppercase;
+}
+
+article {
+	float: left;
+	width: 33%;
+	background-color: #fff;
+	padding: 20px 0 0 24px;
+	margin: 16px 0 20px;
+	border-right: 1px solid #C6C6C6;
+	min-height: 365px;
+}
+
+article:last-child {
+	border: none;
+}
+
+article h3, article p, article a {
+	width: 95%;
+}
+
+article h3 {
+	font: 700 25px "Merriweather",serif;
+	margin-bottom: 18px;
+}
+
+article p {
+	font: 400 20px "Source Sans Pro",sans-serif;
+	margin-bottom: 18px;
+}
+
+footer {
+	padding: 20px;
+	color: #fff;
+	font: 700 18px "Source Sans Pro",sans-serif;
+}
+
+
